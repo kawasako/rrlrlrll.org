@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div class="Page-Top">
+    <header class="Visual">
+      <h1>rrlrlrll.org</h1>
+      <figure><canvas width="480" height="480"></figure>
+    </header>
+    <ul class="Articles">
+      {{ range .Data.Pages }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  <footer class="Global">
+    <p>&copy; 2013-2018 rrlrlrll.org All Rights Reserved.</p>
+  </footer>
+{{ end }}

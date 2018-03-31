@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 30px;
+  background: #fff;
+  font-size: 16px;
+  font-family: serif;
+  letter-spacing: 0.025em;
+  line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.4;
+}
+
+p {
+  line-height: 1.8;
+}
+
+li {
+  list-style: none
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.Page-Top {
+}
+
+.Page-Single {
+  margin: 24px auto;
+  max-width: 640px;
+}
+
+.Page-Single #title {
+  font-size: 36px;
+}
+
+.Page-Single header p {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.Page-Single #content {
+  margin-top: 24px;
+}
+.Page-Single #content h1, h2, h3, h4, h5 {
+}
+.Page-Single #content h1 {
+  margin-top: 18px;
+  font-size: 24px;
+}
+.Page-Single #content h2 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+.Page-Single #content h3 {
+  margin-top: 12px;
+  font-size: 18px;
+}
+.Page-Single #content h4 {
+  margin-top: 12px;
+}
+.Page-Single #content h5 {
+  margin-top: 12px;
+}
+.Page-Single #content p {
+  margin-top: 12px;
+}
+.Page-Single #meta {
+  margin-top: 24px;
+}
+.Page-Single #meta ul {
+  text-align: right;
+}
+.Page-Single #meta li {
+  display: inline-block;
+  font-size: 12px;
+}
+.Page-Single #meta li + li {
+  margin-left: 5px;
+}
+
+.Visual {
+  margin: 0 auto;
+  border: 1px solid #000;
+  max-width: 480px;
+  position: relative;
+  border-radius: 3px;
+
+/*  border-radius: 100%;
+  overflow: hidden;*/
+/*  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 84%;
+  max-width: 480px;
+  transform: translate(-50%, -50%);*/
+  /*background: #cdc;*/
+}
+
+.Visual h1 {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+  font-size: 68px;
+}
+
+.Visual canvas {
+  display: block;
+  width: 100%;
+}
+
+.Articles {
+  margin: 5px auto;
+  max-width: 480px;
+}
+
+.Articles li {
+  display: inline-block;
+  font-size: 12px;
+}
+.Articles li + li {
+  margin-left: 2px;
+}
+
+footer.Global {
+  margin-top: 15px;
+  text-align: center;
+}
+
+footer.Global p {
+  font-size: 12px;
+}

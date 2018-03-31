@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}{{ end }}{{ .Site.Title }}</title>
+    <meta name="description" content="おさしみにたんぽぽをのせるひとの備忘録">
+    <meta name="keywords" content="JavaScript,Frontend,Engineer,フロントエンド,エンジニア">
+    <meta property="og:title" content="rrlrlrll.org">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ .Site.BaseURL }}/img/ogp.png">
+    <meta property="image_src" content="{{ .Site.BaseURL }}/img/ogp.png">
+    <meta property="og:url" content="http://rrlrlrll.org">
+    <meta property="og:site_name" content="rrlrlrll.org">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="icon" href="{{ .Site.BaseURL }}/img/fav.ico">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css">
+  </head>
+  <body>
+    {{ block "main" . }}
+    {{ end }}
+    <script src="{{ .Site.BaseURL }}/js/main.js"></script>
+  </body>
+</html>

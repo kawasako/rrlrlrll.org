@@ -1,0 +1,20 @@
+{{ define "title" }}{{ .Title }} - {{ end }}
+{{ define "main" }}
+<div class="Page-Single">
+  <article id="main">
+    <header>
+      <h1 id="title">{{ .Title }}</h1>
+      <p>{{ .Date.Format "Mon Jan 2, 2006" }}</p>
+    </header>
+    <div id="content">
+       {{ .Content }}
+    </div>
+  </article>
+  <aside id="meta">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="http://twitter.com/intent/tweet?text={{.Permalink}}&via=kawasako3" onclick="window.open(this.href), 'tweetwindow', 'width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=1' ); return false;" target="_blank">Tweet</a></li>
+    </ul>
+  </aside>
+</div>
+{{ end }}
